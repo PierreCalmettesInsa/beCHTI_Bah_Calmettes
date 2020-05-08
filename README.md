@@ -24,3 +24,6 @@ Km = 1/2^32
 Ka = 4095/3300
 Ks = 32
 Kt = 32768
+
+Test objectif 2 : utiliser le logic analyser et regarder compteurOccurence pour 0,1,2,3,4,5, normalement on observe une incrémentation des compteurs.
+
