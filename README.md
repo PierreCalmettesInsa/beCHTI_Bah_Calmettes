@@ -36,3 +36,20 @@ bien la courbe.
 
 Vérifier qu'il y a bien 91µs entre deux échantillons successifs : Il faut placer un point d'arrêt au début de la fonction systeme_callback dans l'assembleur, lancer le programme 
 jusqu'au point d'arrêt, remettre l'horloge t1 à zéro en bas à droite, run le programme une fois, t1 = 91 us.
+
+
+
+Objectif 4 :
+
+Pour observer les résultats, ouvrir le logic analyser et observer compteurOccurence de 0 à 5 en analogue avec min =0, max = 21, et observer TIM3_CCR3 en analogue avec min = 0 et
+max = 660. Cliquer sur run(F5) puis attendre quelques secondes. Arreter le programme (STOP), puis cliquer sur zoom all dans le logic analyser. On peut voir lorsque un signal est
+émis das les compteurOccurence car le palier augmente (de 0 à 20), lorsque le palier atteint 3 un son est émis, nous avons choisi à partir de 3 pour qu'un bruit ne soit pas capté
+comme un signal. On observe l'émission du son dans TIM3_CCR3, à chaque signal un son de bruit de verre est normalement émis. Pour choisir les signaux envoyés, changer le 2eme argument
+dans Init_TimingADC_ActiveADC_ff() (voir la doc de la fake library). 
+
+
+
+
+
+
+
